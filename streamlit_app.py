@@ -3,7 +3,7 @@ import streamlit as st
 
 # get the fruit list from the table
 from snowflake.snowpark.functions import col
- 
+import requests
  
 # Write directly to the app
 st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
@@ -48,4 +48,4 @@ if ingredients_list:
      
       st.success('Your Smoothie is ordered!', icon="✅")
      
-import requests
+
